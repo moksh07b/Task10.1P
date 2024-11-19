@@ -1,0 +1,75 @@
+.PaymentCard {
+    border: 2px solid rgb(180, 230, 180);
+    width: 300px;
+    background-color: rgb(230, 255, 230);
+    margin: 20px;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 128, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.PaymentCard:hover {
+    transform: translateY(-8px);
+}
+
+.AllPaymentCard {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.PaymentCard h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: rgb(34, 94, 34);
+}
+
+.PaymentCard p {
+    font-size: 1.1em;
+    margin: 8px 0;
+    color: rgb(60, 120, 60);
+}
+
+.PaymentCard ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.PaymentCard li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+.PaymentCard li::before {
+    content: "✔";
+    color: rgb(34, 94, 34);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.btn-full {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background-color: rgb(34, 94, 34);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-full:hover {
+    background-color: rgb(25, 80, 25);
+}

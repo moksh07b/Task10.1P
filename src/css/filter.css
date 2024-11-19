@@ -1,0 +1,113 @@
+.filter-menu {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+.filter-menu button{
+    margin-top: 20px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.filters input, 
+.filters select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    width: 60%;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.Tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.Tags h5 {
+    margin: 0;
+    color: #666;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+.PostData {
+    background-color: #fff;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 45%;
+    margin: 20px auto;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.PostData:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.PostData h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.PostData img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.PostData button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.PostData button:hover {
+    background-color: #0056b3;
+}
+
+.readMore {
+    background-color: #28a745;
+}
+
+.readMore:hover {
+    background-color: #218838;
+}
+
+.CodeMirror {
+    margin: 20px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    overflow-y: auto;
+    max-height: 150px;
+}
+
+.Question-List {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}

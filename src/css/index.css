@@ -1,0 +1,346 @@
+
+.Login{
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.nav_but img{
+  width: 20px;
+  margin-right: 30px;
+  vertical-align: middle;
+  border: 1px solid blue;
+  padding: 8px;
+}
+
+label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.nav_but .profile-pic{
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 0px;
+}
+
+.nav_but div {
+  align-items: center;
+  margin: 0;
+  width: auto;
+}
+
+.nav_but h6{
+  margin: 0px;
+}
+
+.Google{
+  text-align: center;
+  margin-top:20px;
+}
+.login-details{
+  text-align: center;
+}
+
+.loggedIn{
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.loggedInCLick:hover{
+  cursor: pointer;
+}
+
+.login-details input{
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.display-msg {
+  margin-top: 30px;
+}
+
+.login-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.login button:hover{
+  background-color: #3e8e41;
+}
+
+
+.sign-up{
+  border: 0px;
+  
+  font-size: 20px;
+  margin-left: 70%;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.sign-up:hover{
+  text-decoration: underline;
+}
+
+.input-label{
+  display: flex;
+  font-size:large;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.input-label label{
+  width: 120px;
+}
+
+.input-label input{
+  width: 90%;
+  padding: 10px;
+}
+
+.Login form{
+  text-align: center;
+}
+
+.Login h2{
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+
+body{
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+header {
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.footer-bg{
+  background-color: rgb(8, 136, 115);
+  justify-content: center;
+  font-weight: bolder;
+  text-align: center;
+}
+
+
+
+.footer-bg-last{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-bg-last p{
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+footer{
+  margin-top: 10px;
+  display: flex;
+  padding: 0 7%;
+  justify-content: space-between;
+  
+}
+
+footer h2{
+  margin-top: 8px;
+}
+
+footer ul{
+  padding: 0px;
+}
+
+footer li{
+  margin-bottom: 5px;
+  list-style: none;
+  text-align: left;
+}
+
+footer img{
+  width: 40px;
+  height: 40px;
+  margin : 10px;
+}
+
+.footer-img{
+  display: flex;
+}
+
+.nav_div p{
+  font-weight: bolder;
+  font-size: larger;
+  margin-right: 10px;
+}
+
+.nav_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_but {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.nav_but button{
+  margin-right: 20px;
+}
+
+input[type="search"] {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer; 
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.all-articles{
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.article-body img{
+  width : 80%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.article-body{
+  margin : 0 10px;
+  padding: 10px;
+  border: 2px dotted green;
+  border-radius: 20px;
+}
+.article-body h2{
+  margin: 5px;
+}
+
+.main-body{
+  text-align: center;
+}
+
+.main-body h2{
+  font-size: xx-large;
+  
+}
+
+.article-body-text{
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-right: 40px;
+}
+
+.article-body-text p {
+  margin-top: 5px;
+}
+
+.article-body-text hr{
+  height: 2px;
+  background-color: black;
+  
+}
+
+
+.main-body button{
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.star-rating{
+  display: flex;
+  align-items: center;
+}
+
+.star-rating h4{
+  margin: 0;
+  margin-left: auto;
+  margin-right: 0px;
+  font-size: x-large;
+  
+}
+
+.star-rating h5{
+  margin: 0;
+  font-size: larger;
+}
+.star-rating img{
+width: 20px;
+height: 20px;
+margin-right: 3px;
+}
+
+.form-signup{
+  margin-top: 20px;
+  background-color: rgb(196, 194, 194);
+  font-weight: 400;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form-signup label{
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: x-large;
+  font-weight: bolder;
+
+}
+
+.form-signup input{
+  height: 20px;
+  vertical-align: middle;
+  width: 40%;
+  margin-right: 10px;
+
+}
+
+.form-signup button{
+    border: 0;
+    padding: 10px;
+    width: auto;
+    font-weight: 700;
+    background-color: rgb(160, 158, 158);
+    vertical-align: middle;
+
+}

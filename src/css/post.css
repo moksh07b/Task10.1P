@@ -1,0 +1,121 @@
+/* General container styling */
+.post-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f7f9fc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading */
+  .post-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form section styling */
+  .post-container .post {
+    margin-bottom: 20px;
+  }
+  
+  .post label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Input fields */
+  .post-container input[type="text"],
+  .post-container input[type="file"],
+  .post-container select,
+  .post-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  .post-container textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  /* Code editor styling */
+  .code-editor {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .CodeMirror {
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Markdown preview styling */
+
+  .post .markdown{
+    margin-top: 10px;
+  }
+
+  .markdown-preview {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .markdown-preview h4 {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  /* Tags select */
+  .basic-multi-select {
+    width: 100%;
+  }
+  
+  .select__control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+  }
+  
+  .select__menu {
+    background-color: #fff;
+  }
+  
+  /* Submit button */
+  .post-container .post.submit button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .post-container .post.submit button:hover {
+    background-color: #45a049;
+  }
+  
