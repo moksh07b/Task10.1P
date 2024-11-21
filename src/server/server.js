@@ -2,13 +2,15 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser'); 
+require("dotenv").config();
 
 app.use(bodyParser.json());
 app.use(cors({
     origin : 'http://localhost:3000'
 }));
+const Mailgun = require("mailgun-js");
 
-const axios = require('axios');
+const mg = Mailgun({ apiKey: process.env.API_KEY, domain: process.env.DOMAIN });
 
 const stripe = require('stripe')('sk_test_51QFsx3EJAsUd94etXfHbLK0ycybB26eHa9QYe9sKOxNgvDtXp6dkB2i6CgiOr7rOqh9x15PSav66dm2VC3CMxnEv00zDlXYt9z');
 
@@ -44,30 +46,16 @@ app.listen(PORT, () => {
 app.post('/hello', async (req, res) => {
     const { email } = req.body;
 
-    const emailData = {
-        sender: { email: 'moksh4794.be23@chitkara.edu.in'},
-        to: [{ email: email }],
-        subject: 'Welcome to DEV@Deakin Newsletter!',
-        htmlContent: '<html><body><h3>Thank you for subscribing to the DEV@Deakin newsletter!</h3></body></html>',
+    let data = {
+        from : "Moksh Bansal <moksh@" + process.env.DOMAIN + ">",
+        to : email,
+        subject : "SIT 313 - Task 10.1P",
+        text : "Sending the mail as a task for the 10.1P requirements.\nRegards\nMoksh Bansal\n2310994794" 
     };
 
     try {
-        const response = await axios.post(
-            'https://api.brevo.com/v3/smtp/email',
-            emailData,
-            {
-                headers: {
-                    "api-key": "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",
-                    "Content-Type": "application/json",
-                },
-            }
-        );
-        if(response.status === 200) {
-            res.status(200).send({ message: 'Welcome email sent successfully!'});
-        }
-        else {
-            res.status(500).send({ error: 'Failed to send email' });
-        }
+      const response = await mg.messages().send(data);
+      console.log(response);
     } catch (error) {
         console.error('Error sending email:', error);
         res.status(500).send({ error: 'Failed to send email' });
